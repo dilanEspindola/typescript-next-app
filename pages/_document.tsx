@@ -14,14 +14,13 @@ class MyDocument extends Document {
 
     return {
       ...initialProps,
-      styles: <>{initialProps.styles}</>,
     };
   }
 
   render() {
     return (
       <Html>
-        <Head>{CssBaseline.flush()}</Head>
+        <Head>{/* {CssBaseline.flush()} */}</Head>
         <body>
           <Main />
           <NextScript />
